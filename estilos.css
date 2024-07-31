@@ -1,0 +1,172 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1{
+    color: #ad970a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    font-size: 1rem;
+}
+
+nav a:hover{
+    color: #ad970a;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #000;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+#caracteristicas ul {
+    list-style: none;
+    padding: 0;
+}
+
+#caracteristicas li {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #f4f4f4;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#testimonios {
+    margin-top: 2rem;
+}
+
+.testimonio {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.contenido {
+    flex: 1;
+}
+
+.estrellas {
+    color: #FFD700;
+}
+
+.estrellas .estrella {
+    font-size: 1.2rem;
+}
+
+.boton-cta {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.boton-cta:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        flex: 1 1 45%;
+        box-sizing: border-box;
+    }
+
+    nav a {
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .imagen-responsive {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .testimonio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .perfil {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .testimonio .contenido {
+        padding: 0 1rem;
+    }
+}
